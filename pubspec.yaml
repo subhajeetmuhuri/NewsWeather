@@ -1,0 +1,40 @@
+name: news_weather_app
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0-182.2.beta <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.5
+  http: ^0.13.4
+  webview_flutter: ^3.0.4
+  webfeed: ^0.7.0
+  geolocator: ^8.2.1
+  intl: ^0.17.0
+  webview_windows: ^0.2.0
+  cached_network_image: ^3.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.1
+  msix: ^3.6.2
+
+flutter:
+  assets:
+    - assets/
+
+  uses-material-design: true
+
+msix_config:
+  display_name: News & Weather
+  identity_name: com.technoindiahooghly.newsweather
+  capabilities: internetClient,location
